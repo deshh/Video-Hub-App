@@ -5,6 +5,8 @@ RUN sudo apt-get install -y \
     wine64
 RUN sudo apt-get install -y \
     libxtst6
+RUN sudo apt-get install -y \
+    libnss3
 #USER root
 #RUN true \ 
 # && sudo apt-get update \
