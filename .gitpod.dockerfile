@@ -1,6 +1,8 @@
 FROM gitpod/workspace-full
 
-RUN sudo apt update \
+USER root
+RUN true \ 
+ && sudo apt update \
  && sudo sudo apt upgrade \
  && sudo dpkg --add-architecture i386 \
  && sudo apt update \
