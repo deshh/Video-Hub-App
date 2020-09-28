@@ -1,8 +1,11 @@
 FROM gitpod/workspace-full
 
 RUN sudo apt-get update
-RUN sudo apt-get install -y \
-    wine64
+RUN sudo dpkg --add-architecture i386
+RUN sudo apt-get install -y \ 
+    wine32
+#RUN sudo apt-get install -y \
+ #   wine64
 RUN sudo apt-get install -y \
     libxtst6
 RUN sudo apt-get install -y \
