@@ -5,5 +5,5 @@ RUN true \
  && sudo apt update \
  && sudo apt upgrade \
  && sudo apt update \
- && sudo apt install wine64 Y \
+ && sudo apt install wine64 -Y \
  && wine –version
