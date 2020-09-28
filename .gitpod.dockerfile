@@ -1,6 +1,8 @@
 FROM gitpod/workspace-full
 
-RUN sudo apt-get update \
- && sudo add-apt-repository ppa:ubuntu-wine/ppa \
- && sudo apt-get update \
- && sudo apt-get install wine1.8 winetricks
+RUN sudo apt update \
+ && sudo sudo apt upgrade \
+ && sudo dpkg --add-architecture i386 \
+ && sudo apt update
+ && sudo apt install wine64 wine32 \
+ && wine –version
