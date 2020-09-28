@@ -1,6 +1,8 @@
 FROM gitpod/workspace-full
 
 RUN sudo apt-get update
+RUN sudo apt-get install -y \
+unattended-upgrades
 RUN sudo add-apt-repository main
 RUN sudo add-apt-repository universe
 RUN sudo add-apt-repository multiverse
