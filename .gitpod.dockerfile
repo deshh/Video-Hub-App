@@ -7,9 +7,10 @@ RUN sudo add-apt-repository main
 RUN sudo add-apt-repository universe
 RUN sudo add-apt-repository multiverse
 
-#RUN sudo dpkg --add-architecture i386
+RUN sudo dpkg --add-architecture i386
+RUN sudo apt-get update
 RUN sudo apt-get install -y \ 
-    wine32
+    wine-stable wine64 wine32:i386 wine64
 #RUN sudo apt-get install -y \
  #   wine64
 RUN sudo apt-get install -y \
